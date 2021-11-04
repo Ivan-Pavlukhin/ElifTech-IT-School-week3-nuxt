@@ -3,7 +3,7 @@
         <h1 class="title">Our Team</h1>
         <ul class="flex">
             <li class="card"  v-for="person of team" :key="person.name">
-                <NuxtLink :to="`/ourTeam/${person.name}`"> <img :src="person.img" alt="" /> <span class="purple darken-3">{{ person.name }}</span></NuxtLink>
+                <nuxt-link :to="`/ourTeam/${person.name}`"> <img :src="person.img" alt="" /> <span class="purple darken-3">{{ person.name }}</span></nuxt-link>
             </li>
         </ul>
     </div>

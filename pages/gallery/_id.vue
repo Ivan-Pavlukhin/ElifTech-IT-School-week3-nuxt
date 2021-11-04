@@ -23,7 +23,9 @@
 
   @Component
   export default class Project extends Vue {
-     projects = {
+    props = {url: String, project: String}
+
+    projects = {
       Project_1: "https://miro.medium.com/max/1838/1*5FF-WiNYehgcBgtgAka1Og.png",
       Project_2: "https://umi.ru/images/cms/data/blog/2105_ux.jpg", 
       Project_3: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/NASA_Website_Homepage_-_April_25%2C_2015.png/240px-NASA_Website_Homepage_-_April_25%2C_2015.png", 
